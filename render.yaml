@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: rag-chatbot
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
-    envVars:
-      - key: OPENAI_API_KEY
-        value: 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 
